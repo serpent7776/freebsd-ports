@@ -1,21 +1,20 @@
 # $FreeBSD$
 
 PORTNAME=	qlipper
-PORTVERSION=	5.0.0
+PORTVERSION=	5.1.1
 CATEGORIES=	deskutils
 
-MAINTAINER=	serpent7776@gmail.com
+MAINTAINER=	vidar@karlsen.tech
 COMMENT=	Cross-platform clipboard history applet
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake desktop-file-utils
-USE_QT5=	core gui widgets buildtools_build
+USES=		cmake desktop-file-utils qmake
+USE_QT5=	core gui widgets buildtools_build linguisttools
 USE_XORG=	x11
 USE_GITHUB=	yes
 GH_ACCOUNT=	pvanek
-GH_TAGNAME=	${PORTVERSION}
 
 DESKTOP_FILE=	${WRKSRC}/qlipper.desktop
 
