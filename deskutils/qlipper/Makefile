@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	qlipper
-PORTVERSION=	5.0.0
+PORTVERSION=	5.1.1
 CATEGORIES=	deskutils
 
 MAINTAINER=	vidar@karlsen.tech
