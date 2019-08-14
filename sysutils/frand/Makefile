@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
 MAINTAINER=	serpent7776@gmail.com
-COMMENT=	Selects a random file from given directory
+COMMENT=	Selects a random file from given directory using reservoir sampling algorithm
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
