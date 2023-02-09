@@ -12,6 +12,7 @@ ONLY_FOR_ARCHS=	amd64
 
 BUILD_DEPENDS=	bash:shells/bash mlton:lang/mlton
 LIB_DEPENDS=	libgmp.so:math/gmp
+RUN_DEPENDS=	gcc:lang/gcc
 
 USES=	gmake autoreconf
 GNU_CONFIGURE=	yes
