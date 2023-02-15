@@ -16,7 +16,7 @@ RUN_DEPENDS=	gcc:lang/gcc
 
 USES=	gmake autoreconf
 GNU_CONFIGURE=	yes
-CONFIGURE_SHELL=	/usr/local/bin/bash
+CONFIGURE_SHELL=	${PREFIX}/bin/bash
 
 OPTIONS_DEFINE=	DOCS
 OPTIONS_DEFAULT=
