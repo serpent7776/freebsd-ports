@@ -7,8 +7,13 @@ MAINTAINER=	serpent7776@gmail.com
 COMMENT=	Standard ML compiler
 WWW=		https://elsman.com/mlkit/
 
-LICENSE=	GPLv2
-LICENSE_FILE=	${WRKSRC}/doc/license/GPL-LICENSE
+LICENSE=	GPLv2 MIT HPND BSD3CLAUSE
+LICENSE_COMB=	multi
+LICENSE_NAME_HPND=	Historical Permission Notice and Disclaimer
+LICENSE_FILE_GPLv2=	${WRKSRC}/doc/license/GPL-LICENSE
+LICENSE_FILE_HPND=	${WRKSRC}/doc/license/MLton-LICENSE
+LICENSE_FILE_BSD3CLAUSE=	${WRKSRC}/doc/license/MLton-LICENSE
+LICENSE_PERMS_HPND=	${_LICENSE_PERMS_DEFAULT}
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	Code generator supports only x86_64

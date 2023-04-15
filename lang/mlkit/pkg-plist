@@ -3096,12 +3096,6 @@ man/man1/mlkit-mllex.1.gz
 man/man1/mlkit-mlyacc.1.gz
 man/man1/mlkit.1.gz
 man/man1/rp2ps.1.gz
-%%PORTDOCS%%%%DOCSDIR%%/license/CODEMIRROR-LICENSE
-%%PORTDOCS%%%%DOCSDIR%%/license/GPL-LICENSE
-%%PORTDOCS%%%%DOCSDIR%%/license/MLKit-LICENSE
-%%PORTDOCS%%%%DOCSDIR%%/license/MLton-LICENSE
-%%PORTDOCS%%%%DOCSDIR%%/license/SMLNJ-LIB-LICENSE
-%%PORTDOCS%%%%DOCSDIR%%/license/SMLNJ-LICENSE
 %%DATADIR%%/include/CommandLine.h
 %%DATADIR%%/include/Dlsym.h
 %%DATADIR%%/include/Exception.h
