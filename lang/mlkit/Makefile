@@ -29,8 +29,6 @@ PORTDOCS=	license mlkit.pdf mllex.pdf mlyacc.pdf NEWS.md
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	melsman
-GH_PROJECT=	mlkit
-GH_TAGNAME=	3a0a3ac0fee28ddaa51bf918f7cc8727bbf9288e
 
 ALL_TARGET=	mlkit mlkit_basislibs
 DISABLE_MAKE_JOBS=	yes
