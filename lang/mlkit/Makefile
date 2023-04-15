@@ -15,9 +15,9 @@ ONLY_FOR_ARCHS_REASON=	Code generator supports only x86_64
 
 BUILD_DEPENDS=	bash:shells/bash mlton:lang/mlton
 LIB_DEPENDS=	libgmp.so:math/gmp
-RUN_DEPENDS=	gcc:lang/gcc
 
 USES=	gmake autoreconf
+USE_gcc=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_SHELL=	${PREFIX}/bin/bash
 
