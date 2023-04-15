@@ -38,4 +38,7 @@ GH_ACCOUNT=	melsman
 ALL_TARGET=	mlkit mlkit_basislibs
 DISABLE_MAKE_JOBS=	yes
 
+post-patch:
+	@${REINPLACE_CMD} 's|gcc|${CC}|g' ${WRKSRC}/src/Common/Flags.sml
+	@${REINPLACE_CMD} 's|"gcc|"${CC}|g' ${WRKSRC}/src/Compiler/Backend/X64/ExecutionX64.sml
 .include <bsd.port.mk>
