@@ -25,7 +25,6 @@ OPTIONS_DEFAULT=
 
 PORTDOCS=	license mlkit.pdf mllex.pdf mlyacc.pdf NEWS.md
 
-.include <bsd.port.options.mk>
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	melsman
