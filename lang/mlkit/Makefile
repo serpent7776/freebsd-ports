@@ -8,6 +8,7 @@ COMMENT=	Standard ML compiler
 WWW=		https://elsman.com/mlkit/
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/doc/license/GPL-LICENSE
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	Code generator supports only x86_64
@@ -23,8 +24,8 @@ CONFIGURE_SHELL=	${PREFIX}/bin/bash
 OPTIONS_DEFINE=	DOCS
 OPTIONS_DEFAULT=
 
-PORTDOCS=	license mlkit.pdf mllex.pdf mlyacc.pdf NEWS.md
 
+PORTDOCS=	mlkit.pdf mllex.pdf mlyacc.pdf NEWS.md
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	melsman
