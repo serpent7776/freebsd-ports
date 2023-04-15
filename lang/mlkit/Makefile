@@ -10,6 +10,7 @@ WWW=		https://elsman.com/mlkit/
 LICENSE=	GPLv2
 
 ONLY_FOR_ARCHS=	amd64
+ONLY_FOR_ARCHS_REASON=	Code generator supports only x86_64
 
 BUILD_DEPENDS=	bash:shells/bash mlton:lang/mlton
 LIB_DEPENDS=	libgmp.so:math/gmp
