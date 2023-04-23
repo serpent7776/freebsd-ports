@@ -1,4 +1,4 @@
 .PHONY: merge
 merge:
-	cp -a games/stonesoup-old /usr/ports/games/
-	cp -a lang/mlkit /usr/ports/lang/
+	find games/stonesoup-old -depth 1 \( -iname Makefile -o -iname files -o -iname pkg-* -o -iname distinfo \) -print0 | cpio -pmd0 /usr/ports
+	find lang/mlkit -depth 1 \( -iname Makefile -o -iname files -o -iname pkg-* -o -iname distinfo \) -print0 | cpio -pmd0 /usr/ports
