@@ -41,4 +41,6 @@ DISABLE_MAKE_JOBS=	yes
 post-patch:
 	@${REINPLACE_CMD} 's|gcc|${CC}|g' ${WRKSRC}/src/Common/Flags.sml
 	@${REINPLACE_CMD} 's|"gcc|"${CC}|g' ${WRKSRC}/src/Compiler/Backend/X64/ExecutionX64.sml
+	@${REINPLACE_CMD} "s|FLAGS=-no_gc -par|FLAGS=-no_gc -par -cc '${CC} -Wl,--allow-multiple-definition'|g" ${WRKSRC}/test/parallelism/Makefile
+
 .include <bsd.port.mk>
