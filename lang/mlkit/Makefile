@@ -26,9 +26,7 @@ USE_gcc=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_SHELL=	${PREFIX}/bin/bash
 
-OPTIONS_DEFINE=	DOCS
-OPTIONS_DEFAULT=
-
+OPTIONS_DEFINE=	DOCS TEST
 
 PORTDOCS=	mlkit.pdf mllex.pdf mlyacc.pdf NEWS.md
 
@@ -37,6 +35,8 @@ GH_ACCOUNT=	melsman
 
 ALL_TARGET=	mlkit mlkit_basislibs
 DISABLE_MAKE_JOBS=	yes
+
+TEST_TARGET=test
 
 post-patch:
 	@${REINPLACE_CMD} 's|gcc|${CC}|g' ${WRKSRC}/src/Common/Flags.sml
