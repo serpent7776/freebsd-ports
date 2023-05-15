@@ -34,7 +34,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	melsman
 
 ALL_TARGET=	mlkit mlkit_basislibs
-DISABLE_MAKE_JOBS=	yes
 
 TEST_TARGET=test
 

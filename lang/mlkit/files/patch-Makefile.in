@@ -1,5 +1,14 @@
 --- Makefile.in.orig	2022-09-18 19:38:55 UTC
 +++ Makefile.in
+@@ -54,7 +54,7 @@ smltojs:
+ all: mlkit mlkit_basislibs smltojs smltojs_basislibs
+ 
+ .PHONY: mlkit_basislibs
+-mlkit_basislibs:
++mlkit_basislibs: mlkit
+ 	(cd basis && SML_LIB=.. ../bin/mlkit -c -no_gc basis.mlb)
+ 	(cd basis && SML_LIB=.. ../bin/mlkit -c -gc basis.mlb)
+ 	(cd basis && SML_LIB=.. ../bin/mlkit -c -gc -prof basis.mlb)
 @@ -458,3 +458,11 @@ mlkit_bin_dist:
  	printf "\t"'for f in $$$$(find * -type f | grep -v ^Makefile); do install -p "$$$$f" "$$(PREFIX)/$$$$f"; done\n' \
                  >> $(CWD)/dist/$(BIN_DIST)/Makefile
