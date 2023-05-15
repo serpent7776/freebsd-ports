@@ -1,12 +1,12 @@
---- Makefile.in.orig	2023-04-26 17:59:42 UTC
+--- Makefile.in.orig	2022-09-18 19:38:55 UTC
 +++ Makefile.in
 @@ -458,3 +458,11 @@ mlkit_bin_dist:
  	printf "\t"'for f in $$$$(find * -type f | grep -v ^Makefile); do install -p "$$$$f" "$$(PREFIX)/$$$$f"; done\n' \
                  >> $(CWD)/dist/$(BIN_DIST)/Makefile
  	(cd dist && tar czf $(BIN_DIST).tgz $(BIN_DIST))
 +
-+.PHONY: run_tests
-+run_tests:
++.PHONY: test
++test:
 +	$(MAKE) -C test_dev test
 +	$(MAKE) -C test test_mlkit
 +	$(MAKE) -C test test_mlkit_no_gc
