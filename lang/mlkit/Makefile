@@ -35,7 +35,11 @@ GH_ACCOUNT=	melsman
 
 ALL_TARGET=	mlkit mlkit_basislibs
 
-TEST_TARGET=test
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MTEST}
+TEST_TARGET=	test
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} 's|gcc|${CC}|g' ${WRKSRC}/src/Common/Flags.sml
