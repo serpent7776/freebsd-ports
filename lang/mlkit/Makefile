@@ -22,7 +22,7 @@ BUILD_DEPENDS=	bash:shells/bash mlton:lang/mlton
 LIB_DEPENDS=	libgmp.so:math/gmp
 
 USES=	gmake autoreconf
-USE_gcc=	yes
+USE_GCC=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_SHELL=	${PREFIX}/bin/bash
 
