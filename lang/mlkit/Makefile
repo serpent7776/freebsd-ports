@@ -26,7 +26,7 @@ USE_GCC=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_SHELL=	bash
 
-OPTIONS_DEFINE=	DOCS TEST
+OPTIONS_DEFINE=	DOCS
 
 PORTDOCS=	mlkit.pdf mllex.pdf mlyacc.pdf NEWS.md
 
@@ -35,11 +35,7 @@ GH_ACCOUNT=	melsman
 
 ALL_TARGET=	mlkit mlkit_basislibs
 
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MTEST}
 TEST_TARGET=	test
-.endif
 
 post-patch:
 	@${REINPLACE_CMD} 's|gcc|${CC}|g' ${WRKSRC}/src/Common/Flags.sml
