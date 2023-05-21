@@ -24,7 +24,7 @@ LIB_DEPENDS=	libgmp.so:math/gmp
 USES=	gmake autoreconf
 USE_GCC=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_SHELL=	${PREFIX}/bin/bash
+CONFIGURE_SHELL=	bash
 
 OPTIONS_DEFINE=	DOCS TEST
 
