@@ -26,7 +26,7 @@ USE_GCC=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_SHELL=	bash
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS TEST
 
 PORTDOCS=	mlkit.pdf mllex.pdf mlyacc.pdf NEWS.md
 
