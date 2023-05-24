@@ -46,4 +46,7 @@ post-patch:
 	@${REINPLACE_CMD} "s|^COMMITDATE=.*|COMMITDATE=2023-05-22|" ${WRKSRC}/configure.ac
 	@${REINPLACE_CMD} "s|^GITVERSION=.*|GITVERSION=\"${PKGVERSION} built by FreeBSD ports, maintained by ${MAINTAINER}\"|" ${WRKSRC}/configure.ac
 
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/mlkit
+
 .include <bsd.port.mk>
