@@ -48,5 +48,7 @@ post-patch:
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/mlkit
+	${FIND} ${STAGEDIR}${PREFIX}/lib/mlkit/basis -name \*.log -delete
+	${RM} -r ${STAGEDIR}${DOCSDIR}/license
 
 .include <bsd.port.mk>
