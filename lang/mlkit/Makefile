@@ -38,6 +38,8 @@ ALL_TARGET=	mlkit mlkit_basislibs
 
 TEST_TARGET=	test
 
+TEST_ENV=	SML_LIB=${STAGEDIR}${PREFIX}/lib/mlkit
+
 post-patch:
 	@${REINPLACE_CMD} 's|gcc|${CC}|g' ${WRKSRC}/src/Common/Flags.sml
 	@${REINPLACE_CMD} 's|"gcc|"${CC}|g' ${WRKSRC}/src/Compiler/Backend/X64/ExecutionX64.sml
